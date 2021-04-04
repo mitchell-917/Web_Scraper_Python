@@ -13,7 +13,18 @@ page_soup = soup(page_html, "html.parser" )
 
 # Finding the elements to scrape
 
-us_oil = page_soup.findAll("a", {"class":"gsstx"})
-us_30 = page_soup.findAll("a", {"class":"gsstx"})
+containers = page_soup.findAll("span", {"class":"gsstx"})
 
+
+
+# Useful bs4 Tools from docs
+# https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+            
+# us_oil = container.findAll("",{":"})
+
+# print(page_soup.prettify())
+# page_soup.get_text()
+
+# for link in page_soup.find_all('a'):
+# print(link.get('href'))
 
