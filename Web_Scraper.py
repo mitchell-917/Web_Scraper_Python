@@ -13,3 +13,5 @@ page_soup = soup(page_html, "html.parser" )
 
 page_soup.h1
 
+containers = page_soup.findAll("div", {"class":"dfx-articleBody"})
+
