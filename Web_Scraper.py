@@ -2,9 +2,9 @@ import bs4
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
-# Open and Close connection
+# Open and Close Connection
 my_url = 'https://www.dailyfx.com/sentiment-report'
-uClient = uReq(my_url) # 
+uClient = uReq(my_url) 
 page_html = uClient.read()
 uClient.close()
 
