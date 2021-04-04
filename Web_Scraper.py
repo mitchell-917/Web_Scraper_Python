@@ -11,7 +11,9 @@ uClient.close()
 # HTML Parsing
 page_soup = soup(page_html, "html.parser" )
 
-page_soup.h1
+# Finding the elements to scrape
 
-containers = page_soup.findAll("div", {"class":"dfx-articleBody"})
+us_oil = page_soup.findAll("a", {"class":"gsstx"})
+us_30 = page_soup.findAll("a", {"class":"gsstx"})
+
 
